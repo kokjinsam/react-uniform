@@ -2,7 +2,7 @@ import Uniform from './index';
 const {
   ANIMATION_CURVE_FAST_OUT_SLOW_IN,
   ANIMATION_CURVE_LINEAR_OUT_SLOW_IN,
-} = Uniform.getAllContants();
+} = Uniform.getAllConstants();
 
 function fastOutSlowIn(duration = '0.2s') {
   return {

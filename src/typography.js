@@ -1,7 +1,7 @@
 import Uniform from './index';
 const {
   PREFERREED_FONT,
-} = Uniform.getAllContants();
+} = Uniform.getAllConstants();
 
 function preferredFont(usePreferred = true) {
   if (usePreferred) {

@@ -3,7 +3,7 @@ const {
   SHADOW_KEY_UMBRA_OPACITY,
   SHADOW_KEY_PENUMBRA_OPACITY,
   SHADOW_AMBIENT_SHADOW_OPACITY,
-} = Uniform.getAllContants();
+} = Uniform.getAllConstants();
 
 function focus() {
   return {
