@@ -16,7 +16,7 @@ function preferredFont(usePreferred = true) {
 function display4(contrast = false, usePreferred = true) {
   return {
     ...preferredFont(usePreferred),
-    fontSize: '13.2rem',
+    fontSize: '11.2rem',
     fontWeight: 300,
     lineHeight: 1,
     letterSpacing: '-0.04em',
@@ -27,7 +27,7 @@ function display4(contrast = false, usePreferred = true) {
 function display3(contrast = false, usePreferred = true) {
   return {
     ...preferredFont(usePreferred),
-    fontSize: '5.8rem',
+    fontSize: '5.6rem',
     fontWeight: 400,
     lineHeight: '1.35',
     letterSpacing: '-0.02em',
@@ -38,7 +38,7 @@ function display3(contrast = false, usePreferred = true) {
 function display2(contrast = false, usePreferred = true) {
   return {
     ...preferredFont(usePreferred),
-    fontSize: '4.7rem',
+    fontSize: '4.5rem',
     fontWeight: 400,
     lineHeight: '4.8rem',
     opacity: contrast ? 0.54 : 1,
@@ -48,7 +48,7 @@ function display2(contrast = false, usePreferred = true) {
 function display1(contrast = false, usePreferred = true) {
   return {
     ...preferredFont(usePreferred),
-    fontSize: '3.6rem',
+    fontSize: '3.4rem',
     fontWeight: 400,
     lineHeight: '4rem',
     opacity: contrast ? 0.54 : 1,
@@ -58,9 +58,9 @@ function display1(contrast = false, usePreferred = true) {
 function headline(contrast = false, usePreferred = true) {
   return {
     ...preferredFont(usePreferred),
-    fontSize: '2.6rem',
+    fontSize: '2.4rem',
     fontWeight: 400,
-    lineHeight: '6rem',
+    lineHeight: '3.2rem',
     MozOsxFontSmoothing: 'grayscale',
     opacity: contrast ? 0.87 : 1,
   };
@@ -69,7 +69,7 @@ function headline(contrast = false, usePreferred = true) {
 function title(contrast = false, usePreferred = true) {
   return {
     ...preferredFont(usePreferred),
-    fontSize: '2.2rem',
+    fontSize: '2rem',
     fontWeight: 500,
     lineHeight: 1,
     letterSpacing: '0.02em',
@@ -82,7 +82,18 @@ function subhead(contrast = false, usePreferred = true) {
     ...preferredFont(usePreferred),
     fontSize: '1.6rem',
     fontWeight: 400,
-    lineHeight: '2rem',
+    lineHeight: '2.4rem',
+    letterSpacing: '0.04em',
+    opacity: contrast ? 0.87 : 1,
+  };
+}
+
+function subhead2(contrast = false, usePreferred = true) {
+  return {
+    ...preferredFont(usePreferred),
+    fontSize: '1.6rem',
+    fontWeight: 400,
+    lineHeight: '2.8rem',
     letterSpacing: '0.04em',
     opacity: contrast ? 0.87 : 1,
   };
@@ -91,9 +102,10 @@ function subhead(contrast = false, usePreferred = true) {
 function body2(contrast = false, usePreferred = true) {
   return {
     ...preferredFont(usePreferred),
-    fontSize: '1.6rem',
+    fontSize: '1.4rem',
     fontWeight: usePreferred ? 500 : 'bold',
     lineHeight: '2rem',
+    letterSpacing: 0,
     opacity: contrast ? 0.87 : 1,
   };
 }
@@ -101,9 +113,10 @@ function body2(contrast = false, usePreferred = true) {
 function body1(contrast = false, usePreferred = true) {
   return {
     ...preferredFont(usePreferred),
-    fontSize: '1.6rem',
+    fontSize: '1.4rem',
     fontWeight: 400,
     lineHeight: '2rem',
+    letterSpacing: 0,
     opacity: contrast ? 0.87 : 1,
   };
 }
@@ -111,41 +124,21 @@ function body1(contrast = false, usePreferred = true) {
 function caption(contrast = false, usePreferred = true) {
   return {
     ...preferredFont(usePreferred),
-    fontSize: '1.4rem',
+    fontSize: '1.2rem',
     fontWeight: 400,
     lineHeight: 1,
+    letterSpacing: 0,
     opacity: contrast ? 0.54 : 1,
-  };
-}
-
-function blockquote(contrast = false, usePreferred = true) {
-  return {
-    ...preferredFont(usePreferred),
-    position: 'relative',
-    fontSize: '2.6rem',
-    fontStyle: 'italic',
-    fontWeight: 300,
-    lineHeight: '1.35',
-    letterSpacing: '0.08em',
-    opacity: contrast ? 0.87 : 1,
-    '&:before': {
-      position: 'absolute',
-      left: '-0.5em',
-      content: '“',
-    },
-    '&:after': {
-      marginLeft: '-0.05em',
-      content: '”',
-    },
   };
 }
 
 function menu(contrast = false, usePreferred = true) {
   return {
     ...preferredFont(usePreferred),
-    fontSize: '1.6rem',
+    fontSize: '1.4rem',
     fontWeight: 500,
     lineHeight: 1,
+    letterSpacing: 0,
     opacity: contrast ? 0.87 : 1,
   };
 }
@@ -157,6 +150,7 @@ function button(contrast = false, usePreferred = true) {
     fontWeight: 500,
     lineHeight: 1,
     textTransform: 'uppercase',
+    letterSpacing: 0,
     opacity: contrast ? 0.87 : 1,
   };
 }
@@ -169,10 +163,10 @@ export {
   headline,
   title,
   subhead,
+  subhead2,
   body2,
   body1,
   caption,
-  blockquote,
   menu,
   button,
 };
